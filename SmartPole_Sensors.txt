@@ -7,18 +7,25 @@ MQTT_TOPIC = /innovation/airmonitoring/SmartPole
 
 {
   "station_id": "SmartPole_0002",
-  "station_name": "NBIOT 0002",
-  "action": "update data"
+  "station_name": "Smart Pole 0002",
+  "action": "update data",
   "device_id": "NEMA_0002",
-  "ccid":"89840480009185162941"
-  "sensors": [
-    "msgid":0,
-    "lumi":0,
-    "incli":"0.00",
-     "x":"0.000",
-     "y":"0.000",
-     "z":"0.000",
-     "rsrp":-94,
-     "cellID":151473406	   
-  ]
+  "ccid": "89840480009185162941",
+  "msgid": 0,
+  "lumi": 0,
+  "incli": "0.57",
+  "x": "0.037",
+  "y": "0.000",
+  "z": "-1.000",
+  "rsrp": -93,
+  "cellID": 151473406
+}
+
+
+{
+  "station_id": "SmartPole_0002",
+  "station_name": "Smart Pole 0002",
+  "action": "control light",
+  "device_id": "NEMA_0002",
+  "data": "62"
 }
