@@ -1,0 +1,14 @@
+com.example.flutter_app-core-1.6.0-0 C:\Users\Admin\.gradle\caches\transforms-3\27aecaba15238402d63266daf9c1518f\transformed\core-1.6.0\res
+com.example.flutter_app-jetified-window-java-1.0.0-beta04-1 C:\Users\Admin\.gradle\caches\transforms-3\6c06979ea5359bfbcc5cd77ed31a1920\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.flutter_app-jetified-window-1.0.0-beta04-2 C:\Users\Admin\.gradle\caches\transforms-3\8ce32ac3b030b0bb069ea72a9fd4b809\transformed\jetified-window-1.0.0-beta04\res
+com.example.flutter_app-jetified-annotation-experimental-1.1.0-3 C:\Users\Admin\.gradle\caches\transforms-3\eecd95245ceb2c544892722454220186\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.flutter_app-debug-4 D:\Documents\Github\Thesis_SmartPole\FlutterApp\android\app\src\debug\res
+com.example.flutter_app-main-5 D:\Documents\Github\Thesis_SmartPole\FlutterApp\android\app\src\main\res
+com.example.flutter_app-pngs-6 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\app\generated\res\pngs\debug
+com.example.flutter_app-resValues-7 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\app\generated\res\resValues\debug
+com.example.flutter_app-rs-8 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\app\generated\res\rs\debug
+com.example.flutter_app-mergeDebugResources-9 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.flutter_app-mergeDebugResources-10 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.flutter_app-merged_res-11 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\app\intermediates\merged_res\debug
+com.example.flutter_app-packaged_res-12 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\connectivity_plus\intermediates\packaged_res\debug
+com.example.flutter_app-packaged_res-13 D:\Documents\Github\Thesis_SmartPole\FlutterApp\build\permission_handler_android\intermediates\packaged_res\debug
