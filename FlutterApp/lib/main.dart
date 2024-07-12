@@ -100,9 +100,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     // Margin = navigation drawer before expanding 103 + padding 40
                     margin: const EdgeInsets.only(left: 143, right: 10, top: 0 , bottom: 10),
                     // Add border radius everywhere = drawer border radius = 31 for child: _pages.elementAt(_selectedIndex),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(31),
-                      child: _pages.elementAt(_selectedIndex),
+                    child: Container(
+                      //border with color #E6E5F2 width 10
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(31),
+                        border: Border.all(color: Color(0xFFE6E5F2), width: 2),
+
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(31),
+                        child: _pages.elementAt(_selectedIndex),
+                      ),
                     ),
                   ),
                 ),
