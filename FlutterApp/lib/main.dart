@@ -84,14 +84,80 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(
+      body: Stack(
         children: <Widget>[
-          CustomNavigationDrawer(
-            selectedIndex: _selectedIndex,
-            onDestinationSelected: _onItemTapped,
+          Positioned.fill(
+            child: Flex(
+              direction: Axis.vertical,
+              children: <Widget>[
+                Expanded(
+                  flex: 126,
+                  child: SizedBox(), // Replace this with your desired widget
+                ),
+                Expanded(
+                  flex: 889,
+                  child: Container(
+                    // Margin = navigation drawer before expanding 103 + padding 40
+                    margin: const EdgeInsets.only(left: 143, right: 10, top: 0 , bottom: 10),
+                    // Add border radius everywhere = drawer border radius = 31 for child: _pages.elementAt(_selectedIndex),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(31),
+                      child: _pages.elementAt(_selectedIndex),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
-          Expanded(
-            child: _pages.elementAt(_selectedIndex),
+          Positioned(
+            top: 0,
+            left: 0,
+            bottom: 0,
+            child: CustomNavigationDrawer(
+              selectedIndex: _selectedIndex,
+              onDestinationSelected: _onItemTapped,
+            ),
+          ),
+          Positioned(
+            top: 20,
+            right: 20,
+            child: Row(
+              children: [
+                IconButton(
+                  //Icon settings white with black stroke
+                  icon: Icon(Icons.settings),
+                  onPressed: () {
+                    // Add your settings page navigation here
+                  },
+                ),
+                SizedBox(width: 23),
+                IconButton(
+                  icon: Icon(Icons.notifications),
+                  onPressed: () {
+                    // Add your notifications page navigation here
+                  },
+                ),
+                SizedBox(width: 23),
+                // Logo with rounded border corner white background and black stroke total width of Container = 35
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xFFF9F9F9),
+                    borderRadius: BorderRadius.circular(30),
+                    border: Border.all(color: Colors.black),
+                  ),
+                  padding: EdgeInsets.all(5),
+                  child: Image.asset('lib/assets/icons/Logo-DH-Bach-Khoa-HCMUT.png', height: 25),
+                ),
+                SizedBox(width: 23),
+                Container(
+                  // CSE, BOLD
+                  child: Text('CSE',
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
+                  ),
+                ),
+                SizedBox(width: 38)
+              ],
+            ),
           ),
         ],
       ),
